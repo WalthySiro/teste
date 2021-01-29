@@ -1,0 +1,479 @@
+a, p{
+    font-family:'Saira Extra Condensed', 'Calibri', 'Arial', 'Lucida Sans Regular';
+	text-decoration: none;
+}
+
+/*INICIO DO PRIMEIRO MENU*/
+.menu{
+	position: absolute;
+	width: 100%;
+	background-color: #f6f6f6;
+	display: inline-block;
+
+	border-bottom: 1px solid rgba(0,85,150,0.5);
+
+	top:0;
+	left: 0;
+
+	transform: translateX(-100%);
+	transition: transform 800ms linear;
+}
+
+.menuOpen{
+	transform: translateX(0);
+	background-color: #f6f6f6;
+}
+
+.btnMenu {
+	font-size: 2em;
+	display: block;	
+	font-weight: bold;
+	padding: 40px 40px;
+	background-position: 15px center;
+}
+.btnMenu i{padding:45px 5px;}
+
+.btnMenuOpen{color: #005596;}
+
+.btnMenuClose{
+	color: #fff;
+	background-color:#005596;
+	width: auto;
+}
+
+.menuItem, .subnavbtn{
+	color: #005596;
+	padding: 20px 15px;
+	background-color: #f6f6f6;
+	border-bottom: 1px solid rgba(0,85,150,0.5);
+	display: block;
+	text-decoration: none;
+	text-transform:uppercase;
+	opacity: 0.8;
+	outline: none;
+}
+
+.menuItem:hover{opacity: 1;}
+
+.menuItem i{margin-left: 5px}
+
+/*.btnMenuClose a{text-decoration: none;}*/
+
+/*.menuItem a{color: #005596;text-decoration: none;text-transform:uppercase;opacity: 0.8;}*/
+/*.menuItem a:hover{opacity: 1;}*/
+
+.contactMenu{
+	display: none;
+}/*FINAL DO DO PRIMEIRO MENU*/
+
+
+
+/*INICIO DO SEGUNDO MENU*/
+.subnav .subnavbtn {
+  font-size: 1em;  
+  border: none;
+  outline: none;
+  color: #005596;
+  padding: 14px 16px;
+  margin: 0;
+  position: relative
+}
+
+/*.subnav:hover .subnavbtn {
+  background-color: red;
+}*/
+
+.subnav-content{
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  padding: 10px 10px;
+  background-color: #005596;
+  display:none;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.menuItemService{
+	width:100%;
+	height: auto;
+	padding: 0px 25px;
+	margin:10px auto 0px auto; 
+    color:#f6f6f6;
+    text-align: center;
+	background-color: #005596;
+}
+.menuItemService:hover{
+    background-color: rgba(0,85,150,0.5);
+    color: #f6f6f6;
+    font-weight: bold;
+}
+
+.subnav:hover .subnav-content {display: block;}
+
+	/*FINAL DO DO SEGUNDO MENU*/
+
+	/* INICIO LOGO DO CABEÇALHO*/
+.logo img{
+	width: 20%;
+	margin: 30px auto;
+	top:-10px;
+	right: 57%;
+	position: absolute;
+	z-index: 1;
+}
+
+.contact-header{
+	display: inline-block;
+	width: 200px;
+	height: auto;
+	margin: 30px auto;
+	top:-10px;
+	right: 5%;
+	text-align: right;
+	position: absolute;
+	line-height: 1.5em;
+	z-index: 1;
+}
+#contact-conteudo-header{
+	width: 100%;
+	margin: 0px;
+	display: inline-block;
+}
+#contact-conteudo-header p{
+	color: #005596;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 8px;
+	font-weight: bold; 
+	font-size: 1em;
+}
+#contact-conteudo-header a{
+		color: #005596;
+	text-decoration: none;
+}
+
+.contact-header i{
+	margin-right:2px;
+}
+
+
+/* FINAL LOGO DO CABEÇALHO*/
+
+		/* W3C SCHOOL INICIO*/
+
+
+
+		/* W3C SCOOL FINAL */
+
+	/*FINAL DO @MEDIA 480 Á 599PX*/
+
+
+
+/*INICIO DO @MEDIA 320PX Á 400PX*/
+@media screen and (min-width: 120px) and (max-width: 420px){
+/* INICIO LOGO DO CABEÇALHO --<120 - 420>*/
+.logo img{
+	width: 28%;
+	max-width: 110px;
+	margin: 30px auto;
+	right: 41%;
+}
+
+.contact-header{
+	width: 120px;
+	margin: 30px auto;
+	top:-10px;
+	right: 6%;
+}
+#contact-conteudo-header img{display: none}
+#contact-conteudo-header p, a{font-size: 0.9em;}
+
+.none{
+	display: none;
+}
+
+	/* FINAL LOGO DO CABEÇALHO -- <120 - 420>*/
+
+
+/*INICIO DO PRIMEIRO MENU -- <120 - 420>*/
+
+.btnMenu{padding: 20px 20px;}
+.btnMenu i{padding:25px 5px;}
+
+.menuItem, .subnavbtn{padding: 10px 15px;}
+
+/* FINAL DO PRIMEIRO MENU -- <120 - 420>*/
+
+/*INICIO DO SEGUNDO MENU -- <120 - 420>*/
+.subnav .subnavbtn {
+  font-size: 1em;  
+  border: none;
+  outline: none;
+  color: #005596;
+  padding: 14px 16px;
+  margin: 0;
+  position: relative
+}
+
+.subnav-content{
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  padding: 10px 10px;
+  background-color: #005596;
+  display:none;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+.menuItemService{	
+	padding: 0px 12px;
+	margin:0px auto 0px auto; 
+}
+
+	/*FINAL DO DO SEGUNDO MENU-- <120 - 420>*/
+
+
+
+}/*FINAL DO @MEDIA 120px Á 420px*/
+
+@media screen and (min-width: 600px) and (max-width: 767px){
+
+/*INICIO DO PRIMEIRO MENU --<600 - 767>*/
+
+.menuItem, .subnavbtn{padding: 20px 20px;}
+	/*INICIO DO PRIMEIRO MENU --<600 - 767>*/
+	
+	/*FINAL DO PRIMEIRO MENU --<600 - 767>*/
+	/*INICIO DO SEGUNDO MENU --<600 - 767>*/
+	.menuItemService{	
+	padding: 0px 40px;
+	margin:0px auto 0px auto; 
+}
+	/*FINAL DO SEGUNDO MENU --<600 - 767>*/
+
+	/* INICIO LOGO DO CABEÇALHO--<600 - 767>*/
+.logo img{
+	width: 22%;
+	max-width: 300px;
+	margin: 30px auto;
+	right: 58%;
+}
+
+.contact-header{
+	width: 330px;
+	margin: 30px 1px;
+	top: 0;
+	right: 2%;
+	text-align: center;
+}
+
+#contact-conteudo-header p{font-size: 1em;}
+
+.none{display: block;}
+	/* FINAL LOGO DO CABEÇALHO--<600 - 767>*/
+
+}/*	FINAL DO @MEDIA 600px Á 767px*/
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+/* INICIO LOGO DO CABEÇALHO --<768 - 1023>*/
+.cabecalho{
+	margin: 0 0 0 0px;
+}
+
+.logo img{
+	width: 14%;
+	max-width: 200px
+	margin: 45px auto;
+	right: 75%;
+}
+
+.contact-header{
+	width: 280px;
+	margin: 50px 10px;
+	right: 10%;
+	line-height: 1.4em;
+	text-align: center;
+	border: 1px solid;
+}
+
+
+#contact-conteudo-header p{font-size: 1em;}
+
+.none{display: block;}
+	/* FINAL LOGO DO CABEÇALHO --<768 - 1023>*/
+
+	/* INICIO DO PRIMEIRO MENU--<768 - 1023> */
+.navegacao a{
+	display: none;
+}
+
+.menu{
+	list-style: none;
+	position: relative;
+	width: 100%;
+	display: inline-flex;
+	margin-top: 120px; 
+	border-bottom: 1px solid rgba(0,85,150,0.5);
+
+	transform: translateX(0);
+}
+
+.menu a{
+	display: block;
+}
+
+.btnMenuClose{
+	margin-left: -79px;
+}
+.btnMenuClose a{
+	display: none;
+}
+
+.menuItem{
+	height: 67px;
+	margin: 0px 0px;
+	padding: 20px 10px 10px 10px
+	border: 1px solid;
+}
+
+.menuItem p{
+	width: 500px;
+	height: 35px;
+	margin: 0px 0px;
+}
+.menuItem p:hover{opacity: 1;}
+
+.contactMenu{
+	display: block;
+	width: 130px;
+	float: right;
+}
+.contactMenu a{
+	padding:1px; 
+	background-color: #ce6b00;
+	color: #fff;
+	border-radius: 15px;
+	text-align: right; 
+}/* FINAL DO DO PRIMEIRO MENU --<768 - 1023>*/
+
+	/* INICIO DO SEGUNDO MENU  --<768 - 1023>*/
+.menuLeft{
+	margin: 0px 0px;
+	padding: 40px 0px 10px 20px;
+	border: 1px solid green
+}
+
+.menu-left:hover{
+	width: auto;
+    height: 120px;
+}
+
+.menu-services li{
+	margin: 12px 15px;
+	width: 15%;
+}
+
+.navegacao{	border: 1px solid;}
+
+}/* FINAL DO SEGUNDO MENU  --<768 - 1023>*/
+
+@media screen and (min-width: 1024px) {
+
+	/* INICIO LOGO DO CABEÇALHO --<1024 - 1440>*/
+.cabecalho{
+	margin: 0 0 0 0px;
+}
+
+
+.logo img{
+	width: 14%;
+	max-width: 200px
+	margin: 45px auto;
+	right: 75%;
+
+}
+
+.contact-header{
+	width: 280px;
+	margin: 50px 10px;
+	right: 10%;
+	line-height: 1.4em;
+	text-align: center;
+	border: 1px solid;
+}
+#contact-conteudo-header p{font-size: 1em;}
+
+.none{display: block;}
+	/* FINAL LOGO DO CABEÇALHO --<1024 - 1440>*/
+
+	/* INICIO DO PRIMEIRO MENU--<1024 - 1440> */
+.navegacao a{display: none;
+}
+
+.menu{
+	list-style: none;
+	position: relative;
+	width: 100%;
+	display: inline-flex;
+	margin-top: 120px; 
+	border-bottom: 1px solid rgba(0,85,150,0.5);
+
+	transform: translateX(0);
+}
+
+.menu a{display: block;}
+
+.btnMenuClose{margin-left: -79px;}
+.btnMenuClose a{display: none;}
+.menuItem{
+	 height: 67px;
+	margin: 0px 0px;
+	padding: 20px 10px 10px 10px
+	border: 1px solid;
+}
+
+.menuItem p{
+	width: 500px;
+	height: 35px;
+	margin: 0px 0px;
+}
+.menuItem p:hover{opacity: 1;}
+
+.contactMenu{
+	display: block;
+	width: 130px
+}
+.contactMenu a{
+	background-color: #ce6b00;
+	color: #fff;
+	border-radius: 15px;
+	text-align: right; 
+}
+	/* FINAL DO DO PRIMEIRO MENU --<1024 - 1440>*/
+
+	/* INICIO DO SEGUNDO MENU  --<1024 - 1440>*/
+.menuLeft{
+	margin: 0px 0px;
+	padding: 40px 0px 10px 20px;
+	border: 1px solid green
+}
+
+.menu-left:hover{
+	width: auto;
+    height: 120px;
+}
+
+.menu-services li{
+	margin: 12px 15px;
+	width: 15%;
+}
+
+
+
+.navegacao{	border: 1px solid;}
+}/* FINAL DO SEGUNDO MENU  --<1024 - 1440>*/
+
